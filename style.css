@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: content-box;
+    background-color: rgb(241, 153, 208);
+    color: black;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.endereco {
+    color: white;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
