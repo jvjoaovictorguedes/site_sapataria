@@ -71,19 +71,32 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-        
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div class="card">
+            <!-- 1° linha -->
+            <div class="card__descricao">
+                <!-- 1° coluna -->
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Caso você se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">AllStar 2023 com a nova cara</h2>
+                    <p class="descricao__texto">Estilo e conforto em um só calçado</p>
+                </div>
+                <!-- 2° coluna -->
+                <img src="" class="descricao__imagem" alt="AllStar sapato">
+            </div>
+
+            <!-- 2° linha -->
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-        spaceBetween: 10,
-        slidesPerview: 3,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets'
+            spaceBetween: 10,
+            slidesPerview: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets'
           },
         });
     </script>
