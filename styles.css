@@ -1,0 +1,19 @@
+@import url(./styles/header.css);
+@import url(./styles/banner.css);
+@import url(./styles/carrosel.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+
+:root {
+    --cor-de-fundo: rgb(241, 140, 241);
+    --cor-das-letras: rgb(8, 8, 88);
+    --fonte-principal: 'Poppins';
+    --branco: #FFFFFF;
+    --cor-dos-destaques: orange;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-size: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}

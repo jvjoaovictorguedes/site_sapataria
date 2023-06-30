@@ -1,17 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device=width, initial-scale=1.0">
-    <title>Cabelereira Sádina</title>
-    <link rel="stylesheet" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <title>Cristina Sapatos</title>
 </head>
 <body>
-    <header></header>
-    <main>
-        <h1>Cabelereira Sádina, disponível na <strong class="endereco">Rua Rio Corumbá n° 1100</strong></h1>
-        <p>Clique aqui e confira todos os cortes e escovas</p></main>
-    <footer></footer>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li> 
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Sandálias</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Rasteiras</a>
+                </li>  
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Sapatilhas</a>
+                </li>  
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Scarpins</a>
+                </li>  
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Tênis</a>
+                </li>  
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Mules</a>
+                </li>  
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Espadrille</a>
+                </li>      
+            </ul>
+            <img src="./assents/logo_cristina.png" alt="logo cristina" class="container__imagem">
+        </div>
+        <div class="container">
+            <a href="#"><img src="./assents/Favoritos.svg" alt="Favoritos" class="container__imagem"></a>
+            <a href="#"><img src="./assents/Sacola.svg" alt="Sacola" class="container__imagem"></a>
+            <a href="#"><img src="./assents/Usuario.svg" alt="Usuário" class="container__imagem"></a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já tem em mente o seu look?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que combina com você!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual sapato você busca?">
+    </section>
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">Lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide"><img src="./assents/Rasteirinhas.png" alt="Rasteirinha 1"></div>
+                <div class="swiper-slide"><img src="./assents/Rasteirinhas.png" alt="Rasteirinha 2"></div>
+                <div class="swiper-slide"><img src="./assents/Rasteirinhas.png" alt="Rasteirinha 3"></div>
+                <div class="swiper-slide"><img src="./assents/Rasteirinhas.png" alt="Rasteirinha 4"></div>
+                <div class="swiper-slide"><img src="./assents/Rasteirinhas.png" alt="Rasteirinha 5"></div>
+                <div class="swiper-slide"><img src="./assents/Rasteirinhas.png" alt="Rasteirinha 6"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerview: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets'
+          },
+        });
+    </script>
 </body>
 </html>
