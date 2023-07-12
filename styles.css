@@ -1,6 +1,7 @@
 @import url(./styles/header.css);
 @import url(./styles/banner.css);
 @import url(./styles/carrosel.css);
+@import url(./styles/card.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
 
 :root {
@@ -16,4 +17,20 @@ body {
     font-size: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
+}
+
+
+@media screen and (min-width: 1024px) {
+    #main { min-width: 1000px;}
+    .swiper {
+        width: 40%;
+    }
+   .banner__pesquisa {
+    width: 50%;
+   }
+   .card {
+    width: 30%;
+    display:grid;
+    margin: 1em 0 1em 28em;
+   }
 }

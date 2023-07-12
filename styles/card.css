@@ -1,0 +1,65 @@
+.descricao__imagem {
+    width: 50%;
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.card {
+    background-color: rgb(223, 70, 177);
+    box-shadow: 0px 10px 10px black;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.descricao__titulo {
+    color: rgb(41, 41, 133);
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--fonte-principal);
+    margin: 0.5em 0;
+}
+
+.descricao__titulo-sapato {
+    color: rgb(4, 4, 26);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--fonte-principal);
+    margin: 0.5em 0;
+}
+
+.descricao__texto {
+    color: white;
+    font-size: 12px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+}
+
+.botoes__ancora {
+    border: solid 1.8em rgb(255, 192, 203);
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 192, 203);
+    border-radius: 20px;
+    padding: 0.2em 0.2em 0 0;
+    margin-top: 1em;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.botoes__item {
+    margin: 0 0.5em;
+}

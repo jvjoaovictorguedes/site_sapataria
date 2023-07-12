@@ -61,16 +61,16 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
             <!-- Slides -->
-                <div class="swiper-slide"><img src="./assents/Rasteirinhas.png" alt="Rasteirinha 1"></div>
-                <div class="swiper-slide"><img src="./assents/Rasteirinhas.png" alt="Rasteirinha 2"></div>
-                <div class="swiper-slide"><img src="./assents/Rasteirinhas.png" alt="Rasteirinha 3"></div>
-                <div class="swiper-slide"><img src="./assents/Rasteirinhas.png" alt="Rasteirinha 4"></div>
-                <div class="swiper-slide"><img src="./assents/Rasteirinhas.png" alt="Rasteirinha 5"></div>
-                <div class="swiper-slide"><img src="./assents/Rasteirinhas.png" alt="Rasteirinha 6"></div>
+                <div class="swiper-slide"><img src="./assents/Rasteirinha.gif" alt="Rasteirinha 1"></div>
+                <div class="swiper-slide"><img src="./assents/Rasteirinha.gif" alt="Rasteirinha 2"></div>
+                <div class="swiper-slide"><img src="./assents/Rasteirinha.gif" alt="Rasteirinha 3"></div>
+                <div class="swiper-slide"><img src="./assents/Rasteirinha.gif" alt="Rasteirinha 4"></div>
+                <div class="swiper-slide"><img src="./assents/Rasteirinha.gif" alt="Rasteirinha 5"></div>
+                <div class="swiper-slide"><img src="./assents/Rasteirinha.gif" alt="Rasteirinha 6"></div>
             </div>
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-prev"></div>
+            <div class="swiper-next"></div>
         </div>
 
         <div class="card">
@@ -79,21 +79,77 @@
                 <!-- 1° coluna -->
                 <div class="descricao">
                     <h3 class="descricao__titulo">Caso você se interesse por...</h3>
-                    <h2 class="descricao__titulo-livro">AllStar 2023 com a nova cara</h2>
-                    <p class="descricao__texto">Estilo e conforto em um só calçado</p>
+                    <h2 class="descricao__titulo-sapato">AllStar 2023 com a nova cara</h2>
+                    <p class="descricao__texto">Estilo e conforto em um só calçado, corra e aproveite essa linda peça.
+                        Não fique de fora.
+                    </p>
                 </div>
                 <!-- 2° coluna -->
-                <img src="" class="descricao__imagem" alt="AllStar sapato">
+                <img src="./assents/allstar.gif" class="descricao__imagem" alt="AllStar sapato">
             </div>
 
             <!-- 2° linha -->
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <!-- 1° coluna -->
+                    <li class="botoes__item"><img src="assents/Favoritos.svg" alt="Favoritar sapato"></li>
+                    <li class="botoes__item"><img src="assents/Sacola.svg" alt="Adicionar no carrinho de compras"></li>
+                </ul>
+                <!-- 2° coluna -->
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide"><img src="./assents/Sapatilha.gif" alt="Rasteirinha 1"></div>
+                <div class="swiper-slide"><img src="./assents/Sapatilha.gif" alt="Rasteirinha 2"></div>
+                <div class="swiper-slide"><img src="./assents/Sapatilha.gif" alt="Rasteirinha 3"></div>
+                <div class="swiper-slide"><img src="./assents/Sapatilha.gif" alt="Rasteirinha 4"></div>
+                <div class="swiper-slide"><img src="./assents/Sapatilha.gif" alt="Rasteirinha 5"></div>
+                <div class="swiper-slide"><img src="./assents/Sapatilha.gif" alt="Rasteirinha 6"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-prev"></div>
+            <div class="swiper-next"></div>
+        </div>
+        <div class="card">
+            <!-- 1° linha -->
+            <div class="card__descricao">
+                <!-- 1° coluna -->
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Cuturno se tornou uma peça chave</h3>
+                    <h2 class="descricao__titulo-sapato">Nos últimos anos esse calçado vem se tornando o queridinho.</h2>
+                    <p class="descricao__texto">Garanta já o seu!</p>
+                </div>
+                <!-- 2° coluna -->
+                <img src="./assents/cuturno.gif" class="descricao__imagem" alt="AllStar sapato">
+            </div>
+
+            <!-- 2° linha -->
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <!-- 1° coluna -->
+                    <li class="botoes__item"><img src="assents/Favoritos.svg" alt="Favoritar sapato"></li>
+                    <li class="botoes__item"><img src="assents/Sacola.svg" alt="Adicionar no carrinho de compras"></li>
+                </ul>
+                <!-- 2° coluna -->
+                <a href="#" class="botoes__ancora">Clique aqui</a>
+            </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
-            slidesPerview: 3,
+            slidesPerview: 1,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets'

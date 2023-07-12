@@ -12,16 +12,14 @@
     width: 100%;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-prev, 
+.swiper-next {
     display: none;
 }
 
-.swiper-pagination {
-    position: initial;
-    margin: 14em 0;
-}
 
 .card__descricao {
     display: flex;
     justify-content: space-between;
 }
+
